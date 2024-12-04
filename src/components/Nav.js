@@ -1,31 +1,37 @@
 import React from 'react';
-import '../styles/Nav.css'; // Importa el archivo CSS para estilos
+import '../styles/Nav.css';
 import logo from '../assets/logo.svg';
-import lin from '../assets/img/socials/linkedin.svg';
-import be from '../assets/img/socials/behance.svg';
-import github from '../assets/img/socials/github.svg';
-import reddit from '../assets/img/socials/reddit.svg';
+import { FaLinkedin, FaGithub, FaReddit } from 'react-icons/fa';
+import { IoLogoBehance } from 'react-icons/io5';
 
 const Nav = () => {
   return (
     <nav className="navbar">
-      <a>
-        <img src={logo} alt="Logo" />
+      <a href="#" aria-label="Ir a la página principal">
+        <img src={logo} alt="Logo de mi marca personal" />
       </a>
-      <aside>
-        <a>
-          <img src={lin} alt="LinkedIn" />
-        </a>
-        <a>
-          <img src={github} alt="GitHub" />
-        </a>
-        <a>
-          <img src={be} alt="Behance" />
-        </a>
-        <a>
-          <img src={reddit} alt="Reddit" />
-        </a>
-      </aside>
+      <ul className="social-links">
+        <li>
+          <a href="https://www.linkedin.com/in/creativesth/" target="_blank" rel="noopener noreferrer" aria-label="Ir a LinkedIn">
+            <FaLinkedin className="icon" />
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/CreativeSTH" target="_blank" rel="noopener noreferrer" aria-label="Ir a GitHub">
+            <FaGithub className="icon" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.behance.net/creativeSTH" target="_blank" rel="noopener noreferrer" aria-label="Ir a Behance">
+            <IoLogoBehance className="icon icon2" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.reddit.com/user/creativeSTH/" target="_blank" rel="noopener noreferrer" aria-label="Ir a Reddit">
+            <FaReddit className="icon icon2" />
+          </a>
+        </li>
+      </ul>
     </nav>
   );
 };

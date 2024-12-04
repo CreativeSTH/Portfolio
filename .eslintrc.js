@@ -2,7 +2,7 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
-    node:true,
+    node: true,
     jest: true,
   },
   settings: {
@@ -10,11 +10,7 @@ module.exports = {
       version: 'detect',
     },
   },
-  extends: [
-    'eslint:recommended',
-    'plugin:react/recommended',
-    'plugin:prettier/recommended',
-  ],
+  extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:prettier/recommended'],
   parser: '@babel/eslint-parser',
   parserOptions: {
     ecmaFeatures: {
@@ -29,7 +25,5 @@ module.exports = {
     eqeqeq: ['error', 'always'],
     'no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
     'react/react-in-jsx-scope': 'off',
-    indent: ['error', 2],
-    semi: ['error', 'always'],
   },
 };
