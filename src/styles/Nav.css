@@ -20,11 +20,11 @@
   }
   & .icon {
     font-size: 27px;
-    color: #97df5f;
+    color: var(--primary-color);
     transition: color 0.3s, transform 0.3s;
   }
   & .icon:hover{
-    color: #6265B4;
+    color: var(--secundary-color);
     transform: scale(1.2);
     
   }
