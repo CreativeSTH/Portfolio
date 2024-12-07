@@ -1,8 +1,27 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import '../styles/Hero.css';
 import foto from '../assets/img/foto2.webp';
 
 const Hero = () => {
+  const [isEnlarged, setIsEnlarged] = useState(false);
+
+  const handleScroll = () => {
+    const scrollY = window.scrollY;
+    // Cambia el valor 100 a lo que necesites para activar el efecto
+    if (scrollY > 500) {
+      setIsEnlarged(true);
+    } else {
+      setIsEnlarged(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <section className="parallax">
       {/* contenedor */}
@@ -12,11 +31,11 @@ const Hero = () => {
         {/* cuerpo del hero */}
         <article className="parallax__items">
           {/* contenedor foto */}
-          <article>
+          <article className="parallax__items__photo">
             <img className="parallax__photo" src={foto} alt="foto de presentacion" />
           </article>
           {/* contenedor tipografy */}
-          <article>
+          <article className="parallax__items_text">
             <span className="parallax__text__a">FRONT</span>
             <span className="parallax__text__b">END</span>
           </article>
