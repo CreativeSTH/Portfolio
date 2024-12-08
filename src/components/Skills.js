@@ -8,7 +8,7 @@ const Skills = () => {
       <article className="skills__content">
         <article className="skills__content__firts">
           <p>TypeScript</p>
-          <progress value="71" max="100" />
+          <progress value="99" max="100" />
           <p>JavaScript</p>
           <progress value="71" max="100" />
           <p>React.j</p>

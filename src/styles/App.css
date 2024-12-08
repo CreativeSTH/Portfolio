@@ -1,10 +1,26 @@
 :root{
+  /* colors */
   --primary-color:#97df5f;
   --secundary-color:#6265B4;
+  --terciary-color:white;
 
+  /* fonts */
   --font-s-titles:40px;
   --font-s-subtitles:30px;
-  --font-s-herospecials:150px;
+
+  --font-s-herospecials:110px;
+  --font-s-herospecials-pc:150px;
+
+  /* padings */
+  --padding-sections: 0px 40px;
+
+  /* sizes */
+  --sise-herospecial-circle:250px;
+  --sise-herospecial-circle-pc:400px;
+
+  --top-herospecial-circle:-165px;
+  --top-herospecial-circle-pc:-250px;
+
 }
 
 html {
@@ -41,4 +57,15 @@ html {
     max-width: 100%;
     display: block;
   }
+  progress{
+    min-width: 100%;
+    min-height: 45px;
+  }
+  progress::-moz-progress-bar {
+    background: rgb(255, 0, 21)!important; 
+  }
+  progress::-webkit-progress-value {
+    background: rgb(255, 0, 13) !important; 
+  }
+  
 }
