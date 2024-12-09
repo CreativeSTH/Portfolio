@@ -68,7 +68,7 @@
 
     .skills__text__a{
       display: block;
-      font-size: var(--font-s-herospecials);
+      font-size: clamp(100px, 10vw, 150px);
       font-weight: 900;
       text-align: center;
       line-height: 35px;
@@ -79,7 +79,7 @@
 
     .skills__text__b{
       display: block;
-      font-size: var(--font-s-herospecials);
+      font-size: clamp(100px, 10vw, 150px);
       font-weight: 900;
       text-align: center;
       position: relative;

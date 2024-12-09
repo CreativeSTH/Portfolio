@@ -8,18 +8,9 @@
   --font-s-titles:40px;
   --font-s-subtitles:30px;
 
-  --font-s-herospecials:110px;
-  --font-s-herospecials-pc:150px;
-
+  
   /* padings */
   --padding-sections: 0px 40px;
-
-  /* sizes */
-  --sise-herospecial-circle:250px;
-  --sise-herospecial-circle-pc:400px;
-
-  --top-herospecial-circle:-165px;
-  --top-herospecial-circle-pc:-250px;
 
 }
 

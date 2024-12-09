@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import '../styles/Hero.css';
-import foto from '../assets/img/foto2.webp';
+import foto from '../assets/img/foto1.webp';
 
 const Hero = () => {
   const [isEnlarged, setIsEnlarged] = useState(false);
