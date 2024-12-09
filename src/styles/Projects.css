@@ -42,10 +42,35 @@
 .slider__content{
   display: flex;
   list-style: none;
-  height: 500px;
+  height: 400px;
   width: 100%;
-  border: 1px red solid;
+  /* border: 1px red solid; */
   overflow: hidden;
   position: relative;
   z-index: 3;
+
+  li{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+
+    .slider__image{
+      width: 300px;
+      height: auto;
+      border-radius: 15px 15px 0px 0px;
+    }
+    .slider__footer{
+      background-color: var(--secundary-color);
+      border-radius: 0px 0px 15px 15px;
+      height: 60px;
+      width: 100%;
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 10px;
+      align-items: center;
+    }
+  }
+  
 }

@@ -12,6 +12,12 @@
   /* padings */
   --padding-sections: 0px 40px;
 
+  /* slider vars */
+  --time: 9s;
+  --width:300px;
+  --height:350px;
+  --quantity: 9;
+
 }
 
 html {
