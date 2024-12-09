@@ -46,9 +46,9 @@
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  gap: 100px;
+  gap: 70px;
   
-  .skills__content__firts{
+  .skills__content__first{
     flex: 1 300px; 
     display: flex;
     justify-content: center;
@@ -110,3 +110,31 @@
     
   }
 }
+.progress {
+  background-color: #edffd7;
+  border-radius: 15px; 
+  height: 25px; 
+  margin-bottom: 10px;
+  position: relative;
+
+  .progress__bar {
+    background-color: var(--primary-color);
+    height: 100%; 
+    border-radius: 15px;
+    transition: width 3s ease; 
+  }
+  .progress__bar__text{
+    color: #000; 
+    font-weight: bold; 
+    position: absolute;
+    left: 50%; 
+    top: 50%; 
+    transform: translate(-50%, -50%); 
+    white-space: nowrap;
+  }
+}
+
+
+
+
+

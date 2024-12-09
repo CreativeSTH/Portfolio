@@ -57,15 +57,5 @@ html {
     max-width: 100%;
     display: block;
   }
-  progress{
-    min-width: 100%;
-    min-height: 45px;
-  }
-  progress::-moz-progress-bar {
-    background: rgb(255, 0, 21)!important; 
-  }
-  progress::-webkit-progress-value {
-    background: rgb(255, 0, 13) !important; 
-  }
   
 }
