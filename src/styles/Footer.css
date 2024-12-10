@@ -1,0 +1,26 @@
+.social-links {
+  display: flex;
+  width: 100%;
+  gap: 5px;
+  justify-content: center;
+}
+.icon {
+  font-size: 27px;
+  color: var(--primary-color);
+  transition: color 0.3s, transform 0.3s;
+}
+& .icon:hover{
+  color: var(--secundary-color);
+  transform: scale(1.2);
+  
+}
+& .icon2{
+  font-size: 29px;
+}
+.footer__info{
+  color: white;
+}
+.footer__logo{
+  width: 200px;
+  margin-top: 10px;
+}

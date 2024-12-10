@@ -52,5 +52,45 @@ html {
     max-width: 100%;
     display: block;
   }
+  input, textarea, button {
+    width: 300px;
+    border: 2px solid var(--secundary-color); 
+    background-color: transparent; 
+    padding: 10px;
+    border-radius: 20px;
+    outline: none;
+    color: var(--secundary-color) ;
+  }
+  button:hover {
+    background-color: rgb(98 101 180 / 42%);
+    transform: skew(1.1);
+  }
+  @media screen and (min-width:765px) {
+    input, textarea, button {
+      width: 640px;
+    }
+  }
+  textarea {
+    height: 200px;
+    resize: none; 
+  }
+
+  input:focus, textarea {
+      border-color: #4A4E8D; 
+      box-shadow: 0 0 5px rgba(98, 101, 180, 0.5); 
+  }
   
+  input::placeholder, textarea::placeholder {
+    color: #6265B4;
+    opacity: 1;
+    font-size: 15px;
+  }
+  footer{
+    width: 100%;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
