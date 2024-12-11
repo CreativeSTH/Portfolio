@@ -2,6 +2,7 @@ import './styles/App.css';
 import ScrollProgress from './components/ScrollProgress';
 import Nav from './components/Nav';
 import Hero from './components/Hero';
+import HeroText from './components/HeroText';
 import Skills from './components/Skills';
 import Project from './components/Projects';
 import Contact from './components/Contact';
@@ -13,8 +14,9 @@ function App() {
       <ScrollProgress />
       <Nav />
       <Hero />
-      <Project />
+      <HeroText />
       <Skills />
+      <Project />
       <Contact />
       <Fter />
     </div>

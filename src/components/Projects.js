@@ -16,14 +16,30 @@ const Project = () => {
             <div className="item__content">
               <h3 className="item__content__title">FLEXBOX, LIKE BENTO UI</h3>
               <img className="item__content__photo" src={project1} />
-              <a className="item__content__botton">PROJECT</a>
+              <a
+                href="https://github.com/CreativeSTH/Incredible-Pure-Css-Slider-"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Go to my github"
+                className="item__content__botton"
+              >
+                PROJECT
+              </a>
             </div>
           </div>
           <div className="item">
             <div className="item__content">
               <h3 className="item__content__title">ONLY CSS SLIDER</h3>
               <img className="item__content__photo" src={project3} />
-              <a className="item__content__botton">PROJECT</a>
+              <a
+                href="https://github.com/CreativeSTH/Incredible-Pure-Css-Slider-"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Go to my github"
+                className="item__content__botton"
+              >
+                PROJECT
+              </a>
             </div>
           </div>
         </div>

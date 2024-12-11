@@ -35,8 +35,10 @@
   pointer-events: none; 
 }
 .contact__title{
-  color: var(--primary-color);
-  font-size: var(--font-s-subtitles);
+  color: var(--terciary-color);
+  font-weight: 800;
+  font-size: clamp(70px, 5vw, 200px);
+  text-align: center;
 }
 .contact__form{
   width: 100%;

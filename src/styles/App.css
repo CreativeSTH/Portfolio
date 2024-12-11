@@ -1,15 +1,39 @@
+@keyframes blurInTop {
+  from {
+      transform: translateY(100%) scale(1.5);
+      filter: blur(20px);
+      opacity: 0;
+  }
+  to {
+    transform: translateY(0%) scale(1);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes blurInBot {
+  from {
+      transform: translateY(-100%) scale(1.5);
+      filter: blur(20px);
+      opacity: 0;
+  }
+  to {
+    transform: translateY(0%) scale(1);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
 @keyframes grow-progress {
   to { width: 100%; }
 }
 
 @keyframes smoothload {
   from {
+    filter: blur(20px);
     opacity: 0;
-    transform: translateY(100px);
   }
   to {
+    filter: blur(0px);
     opacity: 1;
-    transform: translateY(0px);
   }
 }
 :root{
@@ -35,7 +59,6 @@ html {
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  scroll-timeline: --page-scroll block;
 
   *,
   *::before,
@@ -116,6 +139,9 @@ html {
     animation-range: 0 100%;
     animation: grow-progress auto linear;
     animation-timeline: scroll();
+  }
+  .highlight{
+    color: var(--primary-color);
   }
 
 }

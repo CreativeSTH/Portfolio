@@ -24,22 +24,16 @@ const Hero = () => {
 
   return (
     <section className="parallax">
-      {/* contenedor */}
       <article className="parallax__content">
-        {/* titulo */}
-        <h1>Hi, Im SEBASTIAN TORRES</h1>
-        {/* cuerpo del hero */}
+        <h1 className="parallax__tittle">Hi, Im SEBASTIAN TORRES</h1>
         <article className="parallax__items">
-          {/* contenedor foto */}
           <article className="parallax__items__photo">
             <img className="parallax__photo" src={foto} alt="foto de presentacion" />
           </article>
-          {/* contenedor tipografy */}
           <article className="parallax__items_text">
             <span className="parallax__text__a">FRONT</span>
             <span className="parallax__text__b">END</span>
           </article>
-          {/* contenedor parrafo */}
           <article className="parallax__about">
             <h3 className="parallax__title__about">ABOUT ME</h3>
             <p className="parallax__text__about">
