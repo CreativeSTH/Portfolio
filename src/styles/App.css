@@ -1,3 +1,17 @@
+@keyframes grow-progress {
+  to { width: 100%; }
+}
+
+@keyframes smoothload {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 :root{
   /* colors */
   --primary-color:#97df5f;
@@ -13,8 +27,6 @@
   --padding-sections: 0px 40px;
 
   /* slider vars */
-  --width:300px;
-  --height:300px;
 
 }
 
@@ -23,6 +35,7 @@ html {
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  scroll-timeline: --page-scroll block;
 
   *,
   *::before,
@@ -93,4 +106,16 @@ html {
     justify-content: center;
     align-items: center;
   }
+  #progress {
+    position: fixed;
+    left: 0; top: 0;
+    width: 0%; height: 0.5em;
+    background: var(--primary-color);
+    z-index: 5;
+  
+    animation-range: 0 100%;
+    animation: grow-progress auto linear;
+    animation-timeline: scroll();
+  }
+
 }

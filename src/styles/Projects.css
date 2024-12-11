@@ -1,63 +1,128 @@
-.slider{
+#sectionPin {
+  height: 300vh; 
+  overflow: visible; 
+  view-timeline-name: --section-pin-tl;
+  view-timeline-axis: block;
   position: relative;
-  color:white;
-  width: 100%;
-  height: 100%;
-  padding: var(--padding-sections);
-  
-  &::before{
-    content: '';
-    position: absolute;
-    top: 20%; 
-    left: 10%; 
-    width: 300px; 
-    height: 300px; 
-    background-color: #6265b477;
-    border-radius: 50%; 
-    filter: blur(120px); 
-    pointer-events: none;
-    z-index: 1; 
-  }
-  &::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    mask-image: radial-gradient(circle, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 0) 80%);
-    -webkit-mask-image: radial-gradient(circle, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 0) 80%);
-    background-image: linear-gradient(to right, #97df5f09 1px, transparent 1px),
-                      linear-gradient(to bottom, #97df5f09 1px, transparent 1px);
-    background-size: 50px 50px;
-    pointer-events: none; 
-  }
+}
 
-  .slider__title{
-    color: var(--primary-color);
-    font-size: var(--font-s-subtitles);
+#sectionPin::before {
+  content: '';
+  position: absolute;
+  top: 20%; 
+  left: 0; 
+  width: 300px; 
+  height: 300px; 
+  background-color: #6265b477;
+  border-radius: 50%; 
+  filter: blur(120px); 
+  pointer-events: none;
+  z-index: 1; 
+}
+#sectionPin::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  mask-image: radial-gradient(circle, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 0) 80%);
+  -webkit-mask-image: radial-gradient(circle, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 0) 80%);
+  background-image: linear-gradient(to right, #97df5f09 1px, transparent 1px),
+                    linear-gradient(to bottom, #97df5f09 1px, transparent 1px);
+  background-size: 50px 50px;
+  pointer-events: none; 
+}
+
+.pin__wrap__sticky {
+  height: 100vh; 
+  width: 100vw;
+  position: sticky;
+  top: 0;
+  overflow-x: hidden; 
+}
+
+.pin__wrap {
+  height: 100vh; 
+  width: 100vw; 
+  display: flex; 
+  will-change: transform; 
+  animation: move linear forwards;
+  animation-timeline: --section-pin-tl;
+    animation-range: contain 0% contain 100%;
+}
+@media screen and (max-width:430px) {
+  .pin__wrap{
+    width: 200vw; 
   }
 }
 
-.slider__content{
-  display: flex;
-  list-style: none;
-  height: 100%;
-  width: 100%;
-  position: relative;
-  z-index: 3;
-  justify-content: center;
-
-  li{
-    height:100%;
-    width: 100%;
-
-    .slider__image{
-      width: 300px;
-      border-radius: 15px 15px 0px 0px;
-      filter: grayscale(1);
-    }
-   
+@keyframes move {
+  to {
+      transform: translateX(-100%); 
   }
+}
+
+.item {
+  flex: 0 0 60vw; 
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  background-color: #000000; 
+  color: white; 
+  margin: 0;
+
+  .item__title{
+    font-weight: 800;
+    font-size: clamp(70px, 10vw, 350px);
+    color: var(--primary-color);
+    opacity: 0; 
+    animation: smoothload linear forwards; 
+    animation-timeline: --section-pin-tl; 
+    animation-range: 0vh 100vh; 
+    animation-delay: 0s; 
+    position: relative;
+  }
+
+
+  .item__content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: smoothload linear forwards;
+    animation-timeline: --section-pin-tl; 
+    animation-range: 0vh 100vh; 
+    animation-delay: 0s;
+
+    .item__content__title{
+      font-size: 30px;
+    }
+    .item__content__photo{
+      width: 500px;
+      border-radius: 20px;
+    }
+    .item__content__botton{
+      margin-top: 20px;
+      width: 300px;
+      border: 2px solid var(--secundary-color); 
+      background-color: transparent; 
+      padding: 10px;
+      border-radius: 20px;
+      outline: none;
+      text-align: center;
+      font-size: 15px;
+      color: var(--secundary-color) ;
+    }
+    .item__content__botton:hover{
+      background-color: rgb(98 101 180 / 42%);
+      transform: skew(1.1);
+    }
+  }
+ 
   
 }
