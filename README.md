@@ -7,6 +7,6 @@
     <br />
   </p>
   <div align="center">
-    <img src="/readme.webp"/>
+    <img src="./public/readme.webp"/>
   </div>
 </div>
