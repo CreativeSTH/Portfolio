@@ -1,8 +1,40 @@
+/* Animación del Hero */
+@keyframes moveCircle {
+  0% {
+    transform: translate(-50%, -50%) translate(0, 0);
+  }
+  25% {
+    transform: translate(-50%, -50%) translate(30px, 30px);
+  }
+  50% {
+    transform: translate(-50%, -50%) translate(-30px, -30px);
+  }
+  75% {
+    transform: translate(-50%, -50%) translate(30px, -30px);
+  }
+  100% {
+    transform: translate(-50%, -50%) translate(-30px, 30px);
+  }
+}
+@keyframes sticky-parallax-header-move-and-size {
+  to {
+    transform: translateY(-2500px);
+    width: 2500px;
+    height: 2500px;
+    filter: blur(500px);
+  }
+}
+@keyframes parallax-title {
+  to {
+    filter: blur(50px);
+  }
+}
+/* Animaciónes globales scrollSmooth */
 @keyframes blurInTop {
   from {
-      transform: translateY(100%) scale(1.5);
-      filter: blur(20px);
-      opacity: 0;
+    transform: translateY(100%) scale(1.5);
+    filter: blur(20px);
+    opacity: 0;
   }
   to {
     transform: translateY(0%) scale(1);
@@ -12,9 +44,9 @@
 }
 @keyframes blurInBot {
   from {
-      transform: translateY(-100%) scale(1.5);
-      filter: blur(20px);
-      opacity: 0;
+    transform: translateY(-100%) scale(1.5);
+    filter: blur(20px);
+    opacity: 0;
   }
   to {
     transform: translateY(0%) scale(1);
@@ -23,7 +55,9 @@
   }
 }
 @keyframes grow-progress {
-  to { width: 100%; }
+  to {
+    width: 100%;
+  }
 }
 
 @keyframes smoothload {
@@ -36,22 +70,44 @@
     opacity: 1;
   }
 }
-:root{
+/* Animaciónes de Nav*/
+@keyframes fabAnimation {
+  20% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes iconAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+:root {
   /* colors */
-  --primary-color:#97df5f;
-  --secundary-color:#6265B4;
-  --terciary-color:white;
+  --primary-color: #97df5f;
+  --secundary-color: #6265b4;
+  --terciary-color: white;
 
   /* fonts */
-  --font-s-titles:40px;
-  --font-s-subtitles:30px;
+  --font-s-titles: 40px;
+  --font-s-subtitles: 30px;
 
-  
   /* padings */
   --padding-sections: 0px 40px;
 
   /* slider vars */
-
 }
 
 html {
@@ -65,7 +121,7 @@ html {
   *::after {
     box-sizing: inherit;
 
-    font-family: "Source Code Pro", serif;
+    font-family: 'Source Code Pro', serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
@@ -88,40 +144,46 @@ html {
     max-width: 100%;
     display: block;
   }
-  input, textarea, button {
+  input,
+  textarea,
+  button {
     width: 300px;
-    border: 2px solid var(--secundary-color); 
-    background-color: transparent; 
+    border: 2px solid var(--secundary-color);
+    background-color: transparent;
     padding: 10px;
     border-radius: 20px;
     outline: none;
-    color: var(--secundary-color) ;
+    color: var(--secundary-color);
   }
   button:hover {
     background-color: rgb(98 101 180 / 42%);
     transform: skew(1.1);
   }
-  @media screen and (min-width:765px) {
-    input, textarea, button {
+  @media screen and (min-width: 765px) {
+    input,
+    textarea,
+    button {
       width: 640px;
     }
   }
   textarea {
     height: 200px;
-    resize: none; 
+    resize: none;
   }
 
-  input:focus, textarea {
-      border-color: #4A4E8D; 
-      box-shadow: 0 0 5px rgba(98, 101, 180, 0.5); 
+  input:focus,
+  textarea {
+    border-color: #4a4e8d;
+    box-shadow: 0 0 5px rgba(98, 101, 180, 0.5);
   }
-  
-  input::placeholder, textarea::placeholder {
-    color: #6265B4;
+
+  input::placeholder,
+  textarea::placeholder {
+    color: #6265b4;
     opacity: 1;
     font-size: 15px;
   }
-  footer{
+  footer {
     width: 100%;
     height: 230px;
     display: flex;
@@ -131,17 +193,18 @@ html {
   }
   #progress {
     position: fixed;
-    left: 0; top: 0;
-    width: 0%; height: 0.5em;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 0.5em;
     background: var(--primary-color);
     z-index: 5;
-  
+
     animation-range: 0 100%;
     animation: grow-progress auto linear;
     animation-timeline: scroll();
   }
-  .highlight{
+  .highlight {
     color: var(--primary-color);
   }
-
 }

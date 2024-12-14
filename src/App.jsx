@@ -1,14 +1,16 @@
+
 import './styles/App.css';
-import ScrollProgress from './components/ScrollProgress';
 import Nav from './components/Nav';
 import Hero from './components/Hero';
 import HeroText from './components/HeroText';
+import ScrollProgress from './components/ScrollProgress';
 import Skills from './components/Skills';
 import Project from './components/Projects';
 import Contact from './components/Contact';
-import Fter from './components/Footer';
+import Fter from './components/Fter';
 
 function App() {
+
   return (
     <div className="App">
       <ScrollProgress />
@@ -20,7 +22,7 @@ function App() {
       <Contact />
       <Fter />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

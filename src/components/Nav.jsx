@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import '../styles/Nav.css';
-import logo from '../assets/logo.svg';
+import logo from '/logo.svg';
 import { FaLinkedin, FaGithub, FaReddit } from 'react-icons/fa';
 import { IoLogoBehance } from 'react-icons/io5';
 
 const Nav = () => {
-  const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);

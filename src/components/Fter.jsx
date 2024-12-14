@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/logo.svg';
+import logo from '/logo.svg';
 import '../styles/Footer.css';
 import { FaLinkedin, FaGithub, FaReddit } from 'react-icons/fa';
 import { IoLogoBehance } from 'react-icons/io5';

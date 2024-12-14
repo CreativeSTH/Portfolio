@@ -1,8 +1,8 @@
 import React from 'react';
 import '../styles/Projects.css';
-import project1 from '../assets/img/img-p1.webp';
-import project3 from '../assets/img/img-p3.webp';
-import { FaHtml5, FaCss3, FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
+import project1 from '/img/img-p1.webp';
+import project3 from '/img/img-p3.webp';
+
 
 const Project = () => {
   return (
