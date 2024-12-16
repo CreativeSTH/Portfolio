@@ -9,11 +9,15 @@
     background-color: rgba(0, 0, 0, 0.8);
     width: 100%;
     height: 100px;
+    view-timeline: --section-pin-tl;
     display: flex;
     padding: 0 50px;
     justify-content: center;
     align-items: center;
     transition: top 0.3s;
+    animation: sticky-nav cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    animation-timeline: --section-pin-tl;
+    animation-range: 100vh 120vh;
   
     & img {
       width: 200px;

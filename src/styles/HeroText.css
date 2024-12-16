@@ -28,9 +28,9 @@
       left: 0;
       right: 0;
       bottom: 0;
-      mask-image: radial-gradient(circle, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 0) 80%);
-      -webkit-mask-image: radial-gradient(circle, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 0) 80%);
-      background-image: linear-gradient(to right, #97df5f09 1px, transparent 1px), linear-gradient(to bottom, #97df5f09 1px, transparent 1px);
+      mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 50%);
+      -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 50%);
+      background-image: linear-gradient(to right, #7066e029 1px, transparent 1px), linear-gradient(to bottom, #7066e029 1px, transparent 1px);
       background-size: 50px 50px;
       pointer-events: none;
     }
@@ -47,7 +47,7 @@
     animation-range: 0vh 100vh;
     animation-delay: 0s;
   }
-  @media (max-width: 1495px) {
+  @media (max-width: 1279px) {
     .hero {
       height: 100%;
       view-timeline: none;

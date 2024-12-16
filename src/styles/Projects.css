@@ -19,20 +19,6 @@ filter: blur(120px);
 pointer-events: none;
 z-index: 1;
 }
-#sectionPin::after {
-content: '';
-position: absolute;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-mask-image: radial-gradient(circle, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 0) 80%);
--webkit-mask-image: radial-gradient(circle, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 0) 80%);
-background-image: linear-gradient(to right, #97df5f09 1px, transparent 1px), linear-gradient(to bottom, #97df5f09 1px, transparent 1px);
-background-size: 50px 50px;
-pointer-events: none;
-}
-
 .pin__wrap__sticky {
 height: 100vh;
 width: 100vw;
@@ -72,6 +58,7 @@ font-size: 2rem;
 background-color: #000000;
 color: white;
 margin: 0;
+z-index: 2;
 
 .item__title {
     font-weight: 800;
@@ -87,9 +74,9 @@ margin: 0;
     content: 'READY? LETS BEHIN.';
     color: var(--primary-color);
     position: absolute;
-    font-size: clamp(10px, 4vw, 40px);
+    font-size: clamp(15px, 2vw, 40px);
     top: 0;
-    left: 10px;
+    left: 0;
     }
 }
 
@@ -100,7 +87,7 @@ margin: 0;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    animation: smoothload linear forwards;
+    animation: blurInTop linear forwards;
     animation-timeline: --section-pin-tl;
     animation-range: 0vh 100vh;
     animation-delay: 0s;

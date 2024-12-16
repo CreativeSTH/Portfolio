@@ -24,6 +24,14 @@
     filter: blur(500px);
   }
 }
+@keyframes sticky-nav {
+  to {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+  }
+}
 @keyframes parallax-title {
   to {
     filter: blur(50px);
@@ -139,6 +147,7 @@ html {
   a {
     text-decoration: none;
     cursor: pointer;
+    color: white;
   }
   img {
     max-width: 100%;

@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/Hero.css';
 import avatar from '/img/avatar.webp';
+import curriculum from '/presentationCV.pdf'
 
 const Hero = () => {
     return (
@@ -22,7 +23,7 @@ const Hero = () => {
                   me to create web applications with incredible designs, highly aesthetic, but also always thought about user experience, accessibility,
                   code quality and scalability.
                 </p>
-                <a className="parallax__button__about"> Download my CV</a>
+                <a className="parallax__button__about" href='curriculum' target="_blank" rel="noopener noreferrer" download="presentationCV.pdf"> Download my CV</a>
               </article>
             </article>
           </article>

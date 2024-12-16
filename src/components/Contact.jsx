@@ -7,7 +7,7 @@ const Contact = () => {
 
   return (
     <section className="contact">
-      <h3 className="contact__title">CONTACT ME</h3>
+      <h3 className="contact__title">Contact me</h3>
       <form className="contact__form" ref={form} onSubmit={sendEmail}>
         <div className="contact__form__group">
           <input type="text" name="from_name" placeholder="Name" required />
