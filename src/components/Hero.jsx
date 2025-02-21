@@ -13,15 +13,14 @@ const Hero = () => {
                 <img className="parallax__photo" src={avatar} alt="foto de presentacion" />
               </article>
               <article className="parallax__items_text">
-                <span className="parallax__text__a">FRONT</span>
-                <span className="parallax__text__b">END</span>
+                <span className="parallax__text__a">GAME</span>
+                <span className="parallax__text__b">DEV</span>
               </article>
               <article className="parallax__about">
                 <h3 className="parallax__title__about">ABOUT ME</h3>
                 <p className="parallax__text__about">
-                  I am a Graphic Designer and Frontend Developer in love with Angular and a staunch defender of TypeScript. Combining my 2 careers allows
-                  me to create web applications with incredible designs, highly aesthetic, but also always thought about user experience, accessibility,
-                  code quality and scalability.
+                Game Programmer | Game Interface Programmer (Unity 3D)
+                Experienced software developer transitioning into the game development industry with a strong foundation in programming logic and 8+ years of expertise in frontend development. Proficient in Unity 3D and C# for game programming and UI/UX implementation. Skilled in creating interactive and responsive game interfaces, leveraging my extensive knowledge of JavaScript, TypeScript, HTML5, and CSS3. Passionate about combining technical expertise and creativity to deliver engaging gaming experiences.
                 </p>
                 <a className="parallax__button__about" href='curriculum' target="_blank" rel="noopener noreferrer" download="presentationCV.pdf"> Download my CV</a>
               </article>

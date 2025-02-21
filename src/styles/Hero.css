@@ -88,7 +88,7 @@
         z-index: 2;
       }
       & .parallax__text__a::before {
-        content: 'DEVELOPER';
+        content: 'UNITY 3D & FRONTEND';
         font-size: var(--font-s-subtitles);
         position: absolute;
         left: 10px;

@@ -6,7 +6,7 @@ const FinalHeroText = () => {
         <article>
           <section className="hero">
             <p className="hero__text">
-              <span className="highlight">Design System?</span> this is the right place get in touch.
+              <span className="highlight">UNITY 3D DEV?</span> this is the right place get in touch.
             </p>
           </section>
         </article>
