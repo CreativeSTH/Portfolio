@@ -18,9 +18,9 @@ function App() {
       <ScrollProgress />
       <Nav />
       <Hero />
+      <Project />
       <HeroText />
       <Skills />
-      <Project />
       <FinalHeroText />
       <Contact />
       <Fter />

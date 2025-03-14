@@ -29,7 +29,7 @@ overflow-x: hidden;
 
 .pin__wrap {
 height: 100vh;
-width: 340vw;
+width: 440vw;
 display: flex;
 will-change: transform;
 animation: move linear forwards;

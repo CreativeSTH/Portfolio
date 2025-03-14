@@ -6,7 +6,8 @@ import project4 from '/img/img-p4.webp';
 import project5 from '/img/img-p5.webp';
 import project6 from '/img/img-p6.webp';
 import project7 from '/img/img-p7.webp';
-
+import project8 from '/img/img-p8.webp';
+import project9 from '/img/img-p9.webp';
 const Project = () => {
   return (
     <section id="sectionPin">
@@ -14,6 +15,46 @@ const Project = () => {
         <div className="pin__wrap">
           <div className="item">
             <h3 className="item__title">PROJECS</h3>
+          </div>
+          <div className="item">
+            <div className="item__content">
+              <p className='item__content__category'>GAME DEVELOP</p>
+              <h3 className="item__content__title">BUERDEN</h3>
+              <img className="item__content__photo" src={project8} />
+              <ul className='item__content__tech'>
+                <li className='content__tech__i'>C#</li>
+                <li className='content__tech__i'>Unity 3D</li>
+              </ul>
+              <a
+                href="https://juliansdiaz.itch.io/burden"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Go to my github"
+                className="item__content__botton"
+              >
+                VIEW PROJECT
+              </a>
+            </div>
+          </div>
+          <div className="item">
+            <div className="item__content">
+              <p className='item__content__category'>GAME DEVELOP</p>
+              <h3 className="item__content__title">CORRUPTIDE</h3>
+              <img className="item__content__photo" src={project9} />
+              <ul className='item__content__tech'>
+                <li className='content__tech__i'>C#</li>
+                <li className='content__tech__i'>Unity 3D</li>
+              </ul>
+              <a
+                href="https://github.com/CreativeSTH/Corruptide-Videogame"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Go to my github"
+                className="item__content__botton"
+              >
+                VIEW PROJECT
+              </a>
+            </div>
           </div>
           <div className="item">
             <div className="item__content">
